@@ -29,6 +29,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="../css/panels.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -145,7 +146,6 @@
 
         <!-- Page Content -->
         <div id="page-wrapper">
-            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Informacion General</h1>
@@ -154,15 +154,214 @@
                 </div>
                 <!-- /.row -->
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="panel panel-mariosabroso">
+                            <div class="panel-heading">
+                                <p class="text-center">Atributos geniales</p>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class='table'>
+                                        <thead>
+                                            <tr>
+                                                <th>Num.</th>
+                                                <th>Atributos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="danger"> 
+                                                <td>1</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="success"> 
+                                                <td>2</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="info"> 
+                                                <td>3</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="success"> 
+                                                <td>4</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="info"> 
+                                                <td>5</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="danger"> 
+                                                <td>6</td>
+                                                <td>Pobre</td>   
+                                            </tr>
+                                            <tr class="danger"> 
+                                                <td>7</td>
+                                                <td> m&aacute;s Pobre</td>   
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>    
+                            </div>
+                        </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading"></div>
-                            <div class="panel-body"></div>
+                            <div class="panel-heading">
+                                <p class="text-center"> buenos Modales</p>
+                            </div>
+                            <div class="panel-body">
+                                <a data-toggle="modal" data-target="#myModal"> Abrete sesamo </a>
+                            </div>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">titulo del modal</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            aqui pones el choro mareador 
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>          
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <p class='text-center'> Formularios </p>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <div class=row>
+                                        <div class="col-lg-12">
+        
+                                                <div class="form-group">
+                                                    <label>Ingresa Nombre</label>
+                                                    <input class="form-control" placeholder ="sabroso"/>
+                                                    <p class="help-block">Aqui metes tu nombre </p>
+                                                </div>
+                                            </form>
+                                        </div>       
+                                    </div>
+                                    <div class=row>
+                                        <div class="col-lg-6">
+                                        
+                                                <div class="form-group">
+                                                    <label>Actividades</label>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values=""> Gym
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values=""> Fut
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values=""> Mujeres
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label>Miedos </label>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM" id="idradioM" value="" checked/> RM
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM" id="idradioM" value="" /> Ara&ntilde;as
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM" id="idradioM" value="" /> Cucas
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM" id="idradioM" value="" /> mendi
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>         
+                                    </div>
+                                    <div class=row>
+                                        <div class="col-lg-6">
+                                        
+                                                <div class="form-group">
+                                                    <label>Cree que debe ser feliz toda su vida ??</label>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values="" checked/> Nel
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values=""> Es su secreto
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" values=""> pues ya que
+                                                        </label>
+                                                    </div>
+                                                    <fieldset disabled>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" values=""> con rosa
+                                                            </label>
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Placeres </label>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM2" id="idradioM2" value="" /> Hombres <i class="fa fa-male fa-3x"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM2" id="idradioM2" value="" /> Mujeres <i class="fa fa-female fa-lg"></i>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="radiosM2" id="idradioM2" value="" /> Ambos <i class="fa fa-female fa-4x"></i><i class="fa fa-male fa-5x"></i>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                        </div>         
+                                    </div>
+                                    <div class="row">
+                                        <p class="text-right">
+                                            <button type="submit" class="btn btn-success"> Enviar</button>
+                                            <button type="reset" class="btn btn-warning"> La cajetie</button>
+                                        </p>
+                                    </div>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
 
