@@ -16,3 +16,31 @@
 .panel-mariosabroso > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ddd;
 }
+
+.temas .navbar-default .navbar-brand {
+    color: #980a0a;
+    background-color: #2196f3;
+
+}
+.temas a {
+    color: #980a0a;
+    background-color: #2196f3;
+    
+}
+.temas .page-header {
+    background-color: #2196f3;
+    color: #980a0a;
+}
+.temas .navbar-default {
+    background-color: #FFC107;
+    
+}
+
+.temas .panel-heading {
+    color: #E91E63;
+    background-color: #CDDC39;
+    border-color: #ddd;
+}
+.temas {
+    background-color: #FF5722;
+}
