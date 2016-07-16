@@ -1,0 +1,88 @@
+.blue-theme{
+	background-color:#a7d6ff;
+}
+
+.blue-theme .navbar-default{
+	background-color:#a7d6ff;
+}
+
+.blue-theme .navbar-default .navbar-brand{
+	color:#5e6367;
+}
+
+.blue-theme .sidebar ul li {
+    border-bottom: 1px solid #4ea4ec;
+}
+
+.blue-theme a{
+	color:#5e6367;
+}
+
+.blue-theme .navbar-default{
+	border-color:#4ea4ec;
+}
+
+.blue-theme .panel-danger {
+    border-color: #bce8f1;
+}
+
+.blue-theme .panel-success {
+    border-color: #bce8f1;
+}
+
+.blue-theme .panel-danger>.panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.blue-theme .panel-success>.panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+
+.red-theme{
+	background-color:#820000;
+}
+
+.red-theme .navbar-default{
+	background-color:#820000;
+}
+
+.red-theme .navbar-default .navbar-brand{
+	color:#fff;
+}
+
+.red-theme .sidebar ul li {
+    border-bottom: 1px solid #ec4e4e;
+}
+
+.red-theme a{
+	color:#fff;
+}
+
+.red-theme .navbar-default{
+	border-color:#ec4e4e;
+}
+
+.red-theme .panel-info {
+	border-color: #ebccd1;
+}
+
+.red-theme .panel-success {
+	border-color: #ebccd1;
+}
+
+.red-theme .panel-info>.panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.red-theme .panel-success>.panel-heading {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
