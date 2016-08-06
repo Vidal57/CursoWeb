@@ -226,8 +226,6 @@
     <script>
     var debug2;
 
-    
-
     function showAlert(message){
         var alert= '<div class="alert alert-info alert-dismissible" role="alert">';
         alert += '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'
@@ -252,12 +250,6 @@
                         text: 'primero muestra',
                         show: [ 2,3]
                     },
-                    /*{
-                        extend: 'colvisGroup',
-                        text: 'segundo',
-                        show: [ 3, 4, 5 ],
-                        hide: [ 1, 2 ]
-                    },*/
                     {
                         extend: 'colvisGroup',
                         text: 'muestra todo',
@@ -287,9 +279,7 @@
             muestraBotones(this, "primero oculta", "primero muestra")
             muestraBotones(this, "primero muestra", "primero oculta")
             // muestraBotones(nombreBot, "segundo oculta", "segundo muestra")
-            // muestraBotones(nombreBot, "primero oculta", "primero muestra")
-            // muestraBotones(nombreBot, "primero oculta", "primero muestra")
-            // muestraBotones(nombreBot, "primero oculta", "primero muestra")
+            // muestraBotones(nombreBot, "segundo muestra", "segundo oculta")
 
         });
     });
@@ -309,25 +299,10 @@
                 }
 
             })
-
                    
         }
 
     }
-
-
-    $('td').click(function(){
-        var col = $(this).index();
-        var row = $(this).closest('tr').index();
-
-        var $trs = $("#dataTables-example").find('tr');
-        var $ths = $("#dataTables-example").find('th');
-
-        var fila = $trs.eq(row+1).find('td:first');
-        var columna = $ths.eq(col);
-
-        showAlert("Fila: "+fila.text()+"<br/>Valor: "+fila.find("input:hidden").val()+"<br/>Columna: "+columna.text()+"<br/>Valor: "+columna.find("input:hidden").val());
-    });
 
     </script>
 
