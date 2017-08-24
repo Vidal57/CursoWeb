@@ -348,7 +348,11 @@
                         <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                             <thead>
                                 <tr>
-                                    <th>Proveedor</th>
+                                    <th rowspan=2>Proveedor</th>
+                                    <th colspan=4>2016</th>
+                                    <th colspan=4>2015</th>
+                                </tr>
+                                <tr>
                                     <th>Diciembre<input type="hidden" value="12" /></th>
                                     <th>Noviembre <input type="hidden" value="11" /></th>
                                     <th>Octubre <input type="hidden" value="10" /></th>
@@ -357,6 +361,17 @@
                                     <th>Julio <input type="hidden" value="7" /></th>
                                     <th>Junio <input type="hidden" value="6" /></th>
                                     <th>Mayo <input type="hidden" value="9" /></th>
+                                </tr>
+                                <tr>
+                                    <th colspan=9>La que falta para el rey</th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
+                                    <th style="display:none;"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -381,6 +396,17 @@
                                     <td class="center">200</td>
                                     <td class="center">300</td>
                                     <td class="center">600</td>
+                                </tr>
+                                <tr>
+                                    <td colspan=9>Para que veas que no afecta</td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
+                                    <td style="display:none;"></td>
                                 </tr>
                                 <tr class="odd gradeA">
                                     <td >Epson <input type="hidden" value="3140" /></td>
@@ -461,7 +487,8 @@
 
     <!-- Page-Level Demo Scripts - Notifications - Use for reference -->
     <script>
-    var debug2;
+    var debug;
+    var mario;
 
     // tooltip demo
     $('.tooltip-demo').tooltip({
@@ -499,13 +526,22 @@
         var col = $(this).index();
         var row = $(this).closest('tr').index();
 
-        var $trs = $("#dataTables-example").find('tr');
-        var $ths = $("#dataTables-example").find('th');
+        var $trs = $("#dataTables-example").find('tr');//obtienes todos los trs existentes en tu tabla
+        var $ths = $("#dataTables-example").find('th');//obtienes todos los ths existentes en tu tabla
 
-        var fila = $trs.eq(row+1).find('td:first');
-        var columna = $ths.eq(col);
+        debug=$ths;
+        mario=col;
 
-        showAlert("Fila: "+fila.text()+"<br/>Valor: "+fila.find("input:hidden").val()+"<br/>Columna: "+columna.text()+"<br/>Valor: "+columna.find("input:hidden").val());
+        //Aquí debes colocar el total de columnas que tienes (sin contar la primera que sólo es un título)
+        var totalColumnas=8;
+        //Aquí debes colocar el total de columnas que tiene cada mes (en tu caso, 5)
+        var totalColumnasDetalle=4;
+
+        //var fila = $trs.eq(row+1).find('td:first');
+        var encabezadoGral = $ths.eq(Math.ceil(col/totalColumnasDetalle));//obtienes el encabezado general
+        var encabezadoDet = $ths.eq(col+(totalColumnas/totalColumnasDetalle));//obtienes el encabezado de cada detalle
+
+        showAlert(/*"Fila: "+fila.text()+"<br/>Valor: "+fila.find("input:hidden").val()+*/"Encabezado general: "+encabezadoGral.text()+"<br/>Encabezado detalle: "+encabezadoDet.text()/*+"<br/>Valor: "+columna.find("input:hidden").val()*/);
     });
 
     </script>
